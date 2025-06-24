@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Summary Viewer</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>📺 YouTube Summary Viewer</h1>
+            <p>Browse and search through AI-generated video summaries</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="controls">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search summaries...">
+                <button id="searchBtn">🔍</button>
+            </div>
+            <div class="filters">
+                <select id="sortSelect">
+                    <option value="date-desc">Newest First</option>
+                    <option value="date-asc">Oldest First</option>
+                    <option value="title-asc">Title A-Z</option>
+                    <option value="title-desc">Title Z-A</option>
+                </select>
+                <button id="clearFilters">Clear Filters</button>
+            </div>
+        </div>
+
+        <div class="stats">
+            <span id="resultsCount">Loading summaries...</span>
+        </div>
+
+        <div id="summariesContainer" class="summaries-grid">
+            <div class="loading">Loading summaries...</div>
+        </div>
+
+        <div id="summaryModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="modalBody"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 YouTube Summary Viewer | Generated from College Admission Secrets channel</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
